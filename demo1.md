@@ -6,6 +6,11 @@ area = b*h*0.5;
 print('三角形面积为 %f' %area);
 ```
 
+    输入三角形底数: 2
+    输入三角形高: 3
+    三角形面积为 3.000000
+    
+
 
 ```python
 #(2)求三角形的周长
@@ -15,6 +20,12 @@ c = float(input('输入三角形第三边长: '));
 s = (a + b + c) ;
 print('三角形周长为 %0.2f' %s);
 ```
+
+    输入三角形第一边长: 2
+    输入三角形第二边长: 3
+    输入三角形第三边长: 4
+    三角形周长为 9.00
+    
 
 
 ```python
@@ -83,6 +94,10 @@ juli= math.sqrt((p1[1]-p2[1])*(p1[1]-p2[1])+(p1[0]-p2[0])*(p1[0]-p2[0]));
 print(xielv);
 print (juli);
 ```
+
+    2.0
+    8.94427190999916
+    
 
 
 ```python
@@ -162,6 +177,10 @@ else:
  print ('number is odd');
 ```
 
+    enter number12
+    number is even
+    
+
 
 ```python
 #(18) 
@@ -200,6 +219,9 @@ def divide(a,b):
     return str(a/b);
 print(divide(1,0));
 ```
+
+    null
+    
 
 
 ```python
@@ -245,4 +267,57 @@ print(equals("10",10));
 ```
 
     False
+    
+
+
+```python
+#(23)
+i=1;
+j=1;
+count=0;
+while(i<=5):
+    j=i;
+    while(count<5):
+        print(j," ",end='');
+        j+=i;
+        count+=1;
+    print("")
+    i+=1
+    count=0;
+```
+
+    1  2  3  4  5  
+    2  4  6  8  10  
+    3  6  9  12  15  
+    4  8  12  16  20  
+    5  10  15  20  25  
+    
+
+
+```python
+#(21)
+def earning(hours,rate):
+    return hours*rate;
+
+hours = int(input('输入hours:'));
+rate = int(input('输入rate:'));
+print(earning(hours,rate));
+```
+
+    输入hours:4
+    输入rate:30
+    120
+    
+
+
+```python
+#(22)
+def seconds(age):
+    return age*365*24*60*60;
+age = int(input('请输入年龄:'));
+print("你可以活:",seconds(age),"秒");
+```
+
+    请输入年龄:23
+    你可以活: 725328000 秒
     
